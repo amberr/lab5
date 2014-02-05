@@ -5,6 +5,13 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$('.friend a h3').click(replaceWithAnagram)
+
+function replaceWithAnagram() {
+	var curName = $(this).text();
+	$(this).text(anagrammedName(curName));
+}
+
 /*
  * Function that is called when the document is ready.
  */
